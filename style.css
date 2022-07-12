@@ -379,3 +379,21 @@ footer div ul{
 .other-info{
   padding-right: 200px;
 }
+
+
+/* ============================================ mobile  */
+
+body span {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  body div {
+    display: none;
+  }
+
+  body span {
+    display: block;
+    color: red;
+  }
+}
