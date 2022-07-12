@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  color: darkgreen
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list']{
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+span{
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a,a:active,a:focus,a:link{
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+ol { counter-reset: item; }
+ol li { display: block; }
+ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: black;
+}
+
+/* ============================================================================= */
+
+.black-line{
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+
+.main-header{
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.login{
+  text-align: end;
+}
+
+.login span {
+  padding: 0.5rem 0.2rem 0.5rem 0.5rem;
+}
+
+.login > span > a {
+  color: #472b2b;
+  font-size: 0.8rem;
+}
+
+.header-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo h1{
+  text-transform:capitalize;
+  color: rgba(130, 3, 3, 0.684);
+}
+
+.logo h1::first-letter{
+  color: green;
+}
+
+.search-bar  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+
+}
+
+.search-bar-input-area{
+  border: 1px solid black;
+
+}
+.search-bar-input-area *{
+  display: inline-block;
+  
+}
+
+
+.search-bar-input-area input:active{
+  border: none;
+}
+
+.search-icon{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  height: 100%;
+  
+
+}
+
+.search-bar-input-area input{
+  padding: 0.3rem;
+  
+}
+
+.bucket{
+  border: 1px solid black;
+  padding: 0.4rem;
+}
+
+.bucket span {
+  padding-left: 1rem;
+  padding-right: 8rem;
+  color: green;
+}
+
+.main-header-manu{
+  border-bottom:  2px solid silver;
+  margin-bottom: 1rem;
+}
+
+.main-header-manu > ul{
+  padding-left: 1.5rem;
+}
+
+.main-header-manu > ul >li {
+  display: inline-block;
+  border-left: 2px solid black;
+  padding-left: 1rem;
+  margin-left: 0.5rem;
+}
+
+.main-section{
+  max-width: 1224px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.section-left{
+  min-width: fit-content;
+
+}
+
+.side-manu{
+  font-size: 0.8rem;
+  /* line-height: 1.5rem; */
+}
+
+.side-manu span {
+  margin-left: 40px;
+  padding: 0.6rem 0 ;
+  border-bottom: 2px solid silver;
+  width: 100%;
+  color: black;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+
+
+.side-manu ul li {
+  border-left: 2px solid black;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.side-search{
+  margin-left: 40px;
+  margin-top: 2rem;
+}
+
+.side-search span{
+  display: block;
+  color: black;
+  text-transform: capitalize;
+  border-bottom: 1px solid silver;
+  padding: 0.6rem 0
+}
+
+.side-search input{
+  display: inline-block;
+  width: 70%;
+  margin-top: 1rem;
+}
+
+.bestseller-list {
+  margin-top:  2rem;
+}
+
+.bestseller-list span {
+  display: block;
+  color: black;
+  text-transform: capitalize;
+  border-bottom: 1px solid silver;
+  padding: 0.6rem 0 0.6rem 0;
+  margin-left: 2rem;
+  
+}
+
+ol{
+  font-size: 0.8rem;
+}
+
+
+/* ============================================================== */
+.section-right{
+  width: 100%;
+  margin: 0 1.5rem;
+  /* background-color: cornflowerblue; */
+}
+
+.slider{
+  height: 220px;
+  background-color: yellowgreen;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.recommendation{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  row-gap: 1.5rem;
+
+  margin-bottom: 1.5rem;
+
+  /* background-color: antiquewhite; */
+}
+
+.component {
+  width: 31%;
+  /* background-color: cadetblue; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid silver;
+}
+
+.component img {
+  margin: 2rem 0 2rem
+  
+}
+
+.price {
+  color: rgba(130, 3, 3, 0.684);
+  margin-top: 2rem;
+}
+
+.add{
+  background-color: rgba(130, 3, 3, 0.684);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  margin-top: 2rem;
+}
+
+.add-to-bucket{
+  margin-bottom: 2rem;
+}
+
+.add-to-bucket * {
+  display: inline-block;
+}
+
+/* ================================================== */
+
+footer{
+  max-width: 1224px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  border-top: 2px solid black;
+  padding-top: 2rem;
+
+  /* background-color: lightcyan; */
+}
+
+footer span {
+  color: black;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+footer div ul{
+  margin-left: 0;
+  padding-left: 0;
+
+}
+
+.other-info{
+  padding-right: 200px;
+}
