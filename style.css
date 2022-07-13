@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Kaushan+Script&family=Ubuntu&display=swap');
 /* Box sizing rules */
 *,
 *::before,
@@ -137,6 +137,8 @@ ol li:before {
 .logo h1{
   text-transform:capitalize;
   color: rgba(130, 3, 3, 0.684);
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5rem;
 }
 
 .logo h1::first-letter{
@@ -432,6 +434,10 @@ footer div ul{
 @media only screen and (max-width: 485px) {
   .login{
     text-align: center;
+  }
+
+  .logo h1 {
+    font-size: 4rem;
   }
   .header-main{
     display: flex;
