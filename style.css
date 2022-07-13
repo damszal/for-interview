@@ -425,9 +425,15 @@ footer div ul{
   }
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 665px) {
   .search-bar {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 743px) {
+  .logo h1 {
+    font-size: 4rem;
   }
 }
 
@@ -436,9 +442,7 @@ footer div ul{
     text-align: center;
   }
 
-  .logo h1 {
-    font-size: 4rem;
-  }
+
   .header-main{
     display: flex;
     flex-direction: row;
