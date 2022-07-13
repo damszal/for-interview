@@ -118,7 +118,8 @@ ol li:before {
 }
 
 .login span {
-  padding: 0.5rem 0.2rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.2rem 0rem 0.5rem;
+  text-transform: capitalize;
 }
 
 .login > span > a {
@@ -130,6 +131,7 @@ ol li:before {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo h1{
@@ -413,19 +415,27 @@ footer div ul{
 }
 
 
-/* ============================================ mobile  */
+/* ============================================ media DESKTOP */
 
-/* body span {
-  display: none;
-}
-
-@media only screen and (max-width: 1000px) {
-  body div {
+@media only screen and (max-width: 900px) {
+  .search-bar-input-area {
     display: none;
   }
+}
 
-  body span {
-    display: block;
-    color: red;
+@media only screen and (max-width: 610px) {
+  .search-bar {
+    display: none;
   }
-} */
+}
+
+@media only screen and (max-width: 485px) {
+  .login{
+    text-align: center;
+  }
+  .header-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
