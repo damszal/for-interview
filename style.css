@@ -113,6 +113,32 @@ ol li:before {
   padding-right: 10px;
 }
 
+.main-header span{
+  color: green;
+}
+
+.main-header span::first-letter{
+  color: green;
+  text-transform: capitalize;
+}
+
+.inline-manu div {
+  position: absolute;
+  height: fit-content;
+  min-width: fit-content;
+  padding: 1rem 1rem 1rem 0.5rem;
+  background-color: white;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  border: 1px solid silver;
+  /* z-index: 10; */
+  display: none;
+}
+
+.inline-manu:hover div{
+  display: block;
+}
+
 .login{
   text-align: end;
 }
