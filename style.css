@@ -449,3 +449,8 @@ footer div ul{
     justify-content: center;
   }
 }
+@media only screen and (max-width: 380px) {
+  .logo h1 {
+    font-size: 3rem;
+  }
+}
