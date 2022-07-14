@@ -450,6 +450,10 @@ footer div ul{
   display: none;
 }
 
+.icons-manu {
+  display: none;
+}
+
 /* ============================================ media DESKTOP */
 @media only screen and (min-width: 901px) and (max-width: 1020px) {
   .logo {
