@@ -548,6 +548,7 @@ footer div ul{
   }
 
   .icons-manu {
+    display: block;
     border-top: 1px solid silver;
     margin: 10px;
   }
