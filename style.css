@@ -348,7 +348,7 @@ ol{
 .section-right{
   width: 100%;
   margin: 0 1.5rem;
-  /* background-color: cornflowerblue; */
+  z-index: -1;
 }
 /* +++++++++++++//////////////++++++++++++++++++ */
 /* .slider{
