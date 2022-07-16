@@ -1,5 +1,4 @@
 
-"strict mode"
 let cl = console.log
 
 
