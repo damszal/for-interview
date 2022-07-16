@@ -350,16 +350,42 @@ ol{
   margin: 0 1.5rem;
   /* background-color: cornflowerblue; */
 }
-
-.slider{
+/* +++++++++++++//////////////++++++++++++++++++ */
+/* .slider{
   height: 220px;
   background-color: yellowgreen;
 }
 .slider img {
   width: 100%;
   height: 100%;
+} */
+/* ++++++++++++++++////////////////+++++++++++++ */
+.new-slider{
+  margin:  0 auto;
+    height: 220px;
+    /* max-width: 500px; */
+
+    position: relative;
+    background-color: red;
 }
 
+.new-slider img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+  object-fit: cover;
+}
+
+.new-slider > img:nth-child(1){
+  z-index: 1;
+}
+.new-slider > img:nth-child(2){
+  z-index: 0;
+}
+.new-slider > img:nth-child(3){
+  z-index: 0;
+}
 .fav{
   border-bottom: 1px solid silver;
   margin-bottom: 1rem;
@@ -634,3 +660,4 @@ footer div ul{
     font-size: 3rem;
   }
 }
+
