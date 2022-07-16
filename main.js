@@ -21,3 +21,5 @@ const slide = function() { setInterval(() => {
 }, 2000);}
 
 slide()
+
+console.log("skrypt działa")
