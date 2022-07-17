@@ -23,3 +23,8 @@ const slide = function() { setInterval(() => {
 slide()
 
 console.log("skrypt działa")
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const v = document.querySelector('.search-bar-input-area  input')
+
+console.log(v)
