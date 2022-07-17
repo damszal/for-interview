@@ -106,23 +106,23 @@ ol li:before {
 
 /* ============================================================================= */
 
-.black-line{
+.top-line{
   width: 100%;
   height: 3px;
   background-color: black;
 }
 
-.main-header{
+.header{
   max-width: 1224px;
   margin: 0 auto;
   padding-right: 10px;
 }
 
-.main-header span{
+.header span{
   color: green;
 }
 
-.main-header span::first-letter{
+.header span::first-letter{
   /* color: green; DELETED*/
   text-transform: capitalize;
 }
@@ -144,21 +144,21 @@ ol li:before {
   display: block;
 }
 
-.login{
+.header__login-container{
   text-align: end;
 }
 
-.login span {
+.header__sign-container {
   padding: 0.5rem 0.2rem 0rem 0.5rem;
   text-transform: capitalize;
 }
 
-.login > span > a {
+.header__sign-link {
   color: #472b2b;
   font-size: 0.8rem;
 }
 
-.login > span > a:hover{
+.header__sign-link:hover{
   cursor: pointer;
 }
 
@@ -169,22 +169,22 @@ ol li:before {
   align-items: center;
 }
 
-.logo h1{
+.logo__item{
   text-transform:capitalize;
   color: rgba(130, 3, 3, 0.684);
   font-family: 'Kaushan Script', cursive;
   font-size: 5rem;
 }
 
-.logo h1::first-letter{
+.logo__item::first-letter{
   color: green;
 }
 
-.logo h1:hover{
+.logo__item:hover{
   cursor: pointer;
 }
 
-.search-bar  {
+.search-bar-input-area  {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -194,8 +194,7 @@ ol li:before {
 
 }
 
-.search-bar-input-area{
-  /* border: 1px solid #d8d8d8; */
+.search-bar{
   height: inherit;
   max-width: 284px;
   width: 284px;
@@ -207,13 +206,7 @@ ol li:before {
 }
 
 
-
-/* .search-bar-input-area *{
-  display: inline-block;
-  
-} */
-
-.search-bar-input-area > input {
+.search-bar_input {
   border: 1px solid #d8d8d8;
   border-right: none ;
   height: inherit;
@@ -223,11 +216,9 @@ ol li:before {
   font-weight: 500;
 }
 
-.search-bar-input-area > input:focus{
+.search-bar_input{
   outline: none
 }
-
-
 
 .search-icon  {
   height: 100%;
@@ -244,7 +235,7 @@ ol li:before {
   cursor: pointer;
 }
 
-.search-bar-input-area input{
+.search-bar{
   padding-left: 1rem;
   
 }
@@ -501,7 +492,7 @@ footer div ul{
   display: none;
 }
 
-.s-b {
+.long-searchbar {
   display: none;
 }
 
@@ -518,7 +509,7 @@ footer div ul{
 
 @media only screen and (min-width: 666px) and (max-width: 900px) {
 
-  .s-b  {
+  .long-searchbar  {
     /* display: flex;
     flex-direction: row;
     justify-content: center;
@@ -533,7 +524,7 @@ footer div ul{
     margin-bottom: 2rem;
   }
   
-  .s-b-input-area{
+  .long-searchbar__input-area{
   
     height: inherit;
     max-width: auto;
@@ -546,7 +537,7 @@ footer div ul{
   }
 
   
-  .s-b-input-area > input {
+  .long-searchbar__input {
     border: 1px solid #d8d8d8;
     border-right: none ;
     height: inherit;
@@ -557,13 +548,13 @@ footer div ul{
     width: 100%;
   }
   
-  .s-b-input-area > input:focus{
+  .long-searchbar__input:focus{
     outline: none
   }
   
   
   
-  .s-icon  {
+  .long-searchbar__icon  {
     height: 100%;
     width: 40px;
   
@@ -574,11 +565,11 @@ footer div ul{
     color: white;
   }
   
-  .s-b-input-area input{
+  .long-searchbar__input{
     padding-left: 1rem;
     
   }
-  .main-header-manu > ul span {
+  .inline-manu__title{
     font-size: 0.8rem;
   }
 
@@ -599,7 +590,7 @@ footer div ul{
 }
 
 @media only screen and (max-width: 665px) {
-  .search-bar {
+  .search-bar-input-area {
     display: none;
   }
   .main-header-manu {
@@ -632,7 +623,7 @@ footer div ul{
 }
 
 @media only screen and (max-width: 743px) {
-  .logo h1 {
+  .logo__item {
     font-size: 4rem;
   }
 
@@ -663,7 +654,7 @@ footer div ul{
 }
 
 @media only screen and (max-width: 485px) {
-  .login{
+  .header__login-container{
     text-align: center;
   }
 
@@ -675,7 +666,7 @@ footer div ul{
   }
 }
 @media only screen and (max-width: 380px) {
-  .logo h1 {
+  .logo__item {
     font-size: 3rem;
   }
 }

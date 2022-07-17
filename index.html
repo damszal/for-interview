@@ -5,26 +5,28 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css">
-    <title>Vite App</title>
+    <title>BEST-SHOP LEARNING WEBSITE</title>
   </head>
   <body>
-    <div class="black-line"></div>
-    <header class="main-header">
-      <div class="login">
-        <span class="sign-in">
-          <a href="#">zarejestruj</a>
+    <div class="top-line"></div>
+    <header class="header">
+      <div class="header__login-container">
+        <!-- below divs class names and its values have to be changed  -->
+        <span class="header__sign-container">
+          <a class="header__sign-link" href="#">zarejestruj</a>
         </span>
-        <span class="log-in">
-          <a href="#"> zaloguj </a>
+        <span class="header__sign-container">
+          <a class="header__sign-link" href="#"> zaloguj </a>
         </span>
       </div>
       <div class="header-main">
+        <!-- think to change logo function to container and logo_item to element -->
         <div class="logo">
-          <h1>best-shop.pl</h1>
+          <h1 class="logo__item">best-shop.pl</h1> 
         </div>
-        <div class="search-bar">
-          <div class="search-bar-input-area">
-            <input type="text" value="szukaj">
+        <div class="search-bar-input-area">
+          <div class="search-bar">
+            <input class="search-bar_input" type="text" value="szukaj">
             <div class="search-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -39,25 +41,26 @@
           </div>
         </div>
       </div>
+      <!-- where I stoped -->
       <div class="main-header-manu">
-        <div class="s-b">
-          <div class="s-b-input-area">
-            <input type="text" value="szukaj">
-            <div class="s-icon">
+        <div class="long-searchbar">
+          <div class="long-searchbar__input-area">
+            <input class="long-searchbar__input" type="text" value="szukaj">
+            <div class="long-searchbar__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
               </svg>
             </div>
           </div>
         </div>
-        <ul role="list">
+        <ul role="list" class="main-header-manu__item">
           <li>
             <a class="inline-manu" href="#">
-              <span>
+              <span class="inline-manu__title">
                 artykuły biurowe
               </span>
               <div>
-                <ul role="list">
+                <ul role="list" class="inline-manu__subtitles">
                   <li>Lorem, ipsum.</li>
                   <li>Lorem, ipsum dolor.</li>
                   <li>Lorem.</li>
@@ -70,11 +73,11 @@
           </li>
           <li>
             <a class="inline-manu" href="#">
-              <span>
+              <span class="inline-manu__title">
                 artykuły szkolne
               </span>
               <div>
-                <ul role="list">
+                <ul role="list" class="inline-manu__subtitles">
                   <li>Lorem, ipsum.</li>
                   <li>Lorem, ipsum dolor.</li>
                   <li>Lorem.</li>
@@ -87,11 +90,11 @@
           </li>
           <li>
             <a class="inline-manu" href="#">
-              <span>
+              <span class="inline-manu__title">
                 artykuły kreatywne
               </span>
               <div>
-                <ul role="list">
+                <ul role="list" class="inline-manu__subtitles">
                   <li>Lorem, ipsum.</li>
                   <li>Lorem, ipsum dolor.</li>
                   <li>Lorem.</li>
@@ -104,11 +107,11 @@
           </li>
           <li>
             <a class="inline-manu" href="#">
-              <span>
+              <span class="inline-manu__title">
                 książki i kolorowanki dla dzieci
               </span>
               <div>
-                <ul role="list">
+                <ul role="list" class="inline-manu__subtitles">
                   <li>Lorem, ipsum.</li>
                   <li>Lorem, ipsum dolor.</li>
                   <li>Lorem.</li>
@@ -121,11 +124,11 @@
           </li>
           <li>
             <a class="inline-manu" href="#">
-              <span>
+              <span class="inline-manu__title">
                 zabawki
               </span>
               <div>
-                <ul role="list">
+                <ul role="list" class="inline-manu__subtitles">
                   <li>Lorem, ipsum.</li>
                   <li>Lorem, ipsum dolor.</li>
                   <li>Lorem.</li>
@@ -139,27 +142,27 @@
         </ul>    
       </div>
       <div class="icons-manu">
-        <ul role="list">
-          <li>
+        <ul role="list" class="icons-manu_items-group">
+          <li class="icons-manu_item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
           </li>
-          <li>
+          <li class="icons-manu_item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
             </svg>
           </li>
-          <li>
+          <li class="icons-manu_item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
               <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
             </svg>
-          </li>
+          </li class="icons-manu_item">
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket-fill" viewBox="0 0 16 16">
               <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"/>
             </svg>
-          </li>
+          </li class="icons-manu_item">
         </ul>
       </div>
     </header>
@@ -480,7 +483,7 @@ slide()
 console.log("skrypt działa")
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++
-const v = document.querySelector('.search-bar-input-area > input')
+const v = document.querySelector('.search-bar > input')
 console.log(v)
 v.addEventListener('focus', (e)=>{
   e.target.value=""
