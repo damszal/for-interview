@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./reset-style.css">
+    
     <title>BEST-SHOP LEARNING WEBSITE</title>
   </head>
   <body class="page" >
@@ -456,6 +459,25 @@
       </div>
     </footer> 
     <span>SORRY ! WEBSITE WORKS ONLY ON DESKTOP DEVICES</span>
+<!-- MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL -->
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Agreements </p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab animi, cupiditate quis nobis voluptates voluptatem maiores alias reiciendis ducimus dolorum?</p>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">Save changes</button>
+          <button class="button modal-button">Cancel</button>
+        </footer>
+      </div>
+    </div>
+    
+<!-- JAVA SCRIPT JAVA SCRIPT  JAVA SCRIPT jaVa Script java script temporary yep, -->
     <script>
       
 let cl = console.log
@@ -490,11 +512,36 @@ v.addEventListener('focus', (e)=>{
   e.target.value=""
   console.log(e)
 })
+// MODAL ****************************************************** modal MODAL 
 
+let modal = document.querySelector('.modal')
+let bkg = document.querySelector('.modal-background')
+let mClose = document.querySelector('.modal-button')
+let cardDel = document.querySelector('.modal-card-head .delete')
+let footBtn = document.querySelector('.modal-card-foot .button')
+const deleteModal = [bkg,cardDel,footBtn,mClose]
+console.log(deleteModal)
+
+window.onload = (event) => {
+  modal.classList.toggle('is-active')
+  //-------------------------------------------
+  console.log(close)
+  deleteModal.forEach((el)=>{
+    console.log(el)
+    el.addEventListener('click',()=>{
+      modal.classList.remove('is-active')
+    })
+  })
+
+}
+
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 console.log(v)
-
-
     </script>
-   
+
+
   </body>
 </html>
