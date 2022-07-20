@@ -37,6 +37,8 @@ ol li:before {
 .header{
   max-width: 1224px;
   padding-right: 10px;
+  position: relative;
+  z-index: 1000;
 }
 .header span{
   color: green;
@@ -250,7 +252,7 @@ ol{
 .section-right{
   width: 100%;
   margin: 0 1.5rem;
-  z-index: -1;
+  /* z-index: 1; */
 }
 /* +++++++++++++//////////////++++++++++++++++++ */
 /* .slider{
@@ -271,14 +273,14 @@ ol{
     background-color: red;
 }
 
-.new-slider img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+ .carousel-item > img {
+  /* position: absolute; */
+  height: 220px;
+  /* width: 100%; */
   
   object-fit: cover;
 }
-
+/* 
 .new-slider > img:nth-child(1){
   z-index: 1;
 }
@@ -287,7 +289,7 @@ ol{
 }
 .new-slider > img:nth-child(3){
   z-index: 0;
-}
+} */ */
 .fav{
   border-bottom: 1px solid silver;
   margin-bottom: 1rem;
@@ -472,6 +474,10 @@ footer div ul{
   .main-header-manu > ul li:last-child{
     display: none;
   }
+}
+.modal{
+  
+  z-index: 2000;
 }
 
 
