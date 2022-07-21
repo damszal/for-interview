@@ -47,7 +47,7 @@ ol li:before {
   text-transform: capitalize;
 }
 /* separate position from div */
-.inline-manu div {
+.inline-manu__item div {
   position: absolute;
   height: fit-content;
   min-width: fit-content;
@@ -56,7 +56,7 @@ ol li:before {
   border: 1px solid silver;
   display: none;
 }
-.inline-manu:hover div{
+.inline-manu__item:hover div{
   display: block;
 }
 .inline-manu__subtitles{
@@ -139,7 +139,7 @@ ol li:before {
 }
 
 /* continue BEM checking */
-.bucket{
+.basket{
   border: 1px solid #d8d8d8;
   padding: 0.4rem;
   height: inherit;
@@ -149,7 +149,7 @@ ol li:before {
   align-items: center;
 }
 
-.bucket span {
+.basket__contant {
   padding-left: 1rem;
   padding-right: 8rem;
   color: green;
@@ -157,18 +157,21 @@ ol li:before {
   text-transform: capitalize;
 }
 
-
-
-.main-header-manu{
-  border-bottom:  2px solid silver;
-  margin-bottom: 1rem;
+.header__main-manu{
+  margin-bottom: 1.5rem;
 }
 
-.main-header-manu > ul{
+.main-manu{
+  border-bottom:  2px solid silver;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.inline-manu{
   padding-left: 1.5rem;
 }
 
-.main-header-manu > ul >li {
+.inline-manu > li {
   display: inline-block;
   border-left: 2px solid black;
   padding-left: 1rem;
@@ -397,179 +400,10 @@ footer div ul{
 .icons-manu {
   display: none;
 }
-
-/* ============================================ media DESKTOP */
-@media only screen and (min-width: 901px) and (max-width: 1020px) {
-  .logo {
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 666px) and (max-width: 900px) {
-
-  .long-searchbar  {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
-    /* column-gap: 1rem; */
-    display: block;
-    height: 46px;
-    max-width: 100%;
-    padding-left: 40px;
-    padding-right: 10px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .long-searchbar__input-area{
-  
-    height: inherit;
-    max-width: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  
-  }
-
-  
-  .long-searchbar__input {
-    border: 1px solid #d8d8d8;
-    border-right: none ;
-    height: inherit;
-    color: rgb(122, 122, 122);
-    text-transform: capitalize;
-    font-size: 0.9rem;
-    font-weight: 500;
-    width: 100%;
-  }
-  
-  .long-searchbar__input:focus{
-    outline: none
-  }
-  
-  
-  
-  .long-searchbar__icon  {
-    height: 100%;
-    width: 40px;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #472b2b;
-    color: white;
-  }
-  
-  .long-searchbar__input{
-    padding-left: 1rem;
-    
-  }
-  .inline-manu__title{
-    font-size: 0.8rem;
-  }
-
-  .main-header-manu > ul li:last-child{
-    display: none;
-  }
-}
-.modal{
-  
+.modal{    
   z-index: 2000;
 }
 
 
-@media only screen and (max-width: 900px) {
-  .search-bar-input-area {
-    display: none;
-  }
-  
-  .component{
-    min-width: 48%
-  }
-}
 
-@media only screen and (max-width: 665px) {
-  .search-bar-input-area {
-    display: none;
-  }
-  .main-header-manu {
-    display: none;
-  }
-
-  .icons-manu {
-    display: block;
-    border-top: 1px solid silver;
-    margin: 10px;
-  }
-
-  .icons-manu ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .icons-manu ul li svg  {
-    height: 25px;
-    width: 25px;
-  }
-
-  .icons-manu ul li:hover{
-    cursor: pointer;
-  }
-.section-left{
-  display: none;
-}
-
-}
-
-@media only screen and (max-width: 743px) {
-  .logo__item {
-    font-size: 4rem;
-  }
-
-  .slider{
-    display: none;
-  }
-
-  .recommendation{
-    flex-direction: column;
-  }
-
-  .component{
-    min-width: 100%
-  }
-
-  footer{
-    flex-direction: column;
-    align-items: center;
-    justify-content: none;
-  }
-  .other-info{
-    padding-right: inherit;
-  }
-  .my-account{
-    margin-left: -1rem;
-    padding-left: inherit;
-  }
-}
-
-@media only screen and (max-width: 485px) {
-  .header__login-container{
-    text-align: center;
-  }
-
-
-  .header-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 380px) {
-  .logo__item {
-    font-size: 3rem;
-  }
-}
 

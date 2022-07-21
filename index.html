@@ -7,8 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./reset-style.css">
+    <link rel="stylesheet" href="./reset-style.css" media="all">
+    <link rel="stylesheet" href="./style.css" media="all">
+    <link rel="stylesheet" href="./style380.css" media="(max-width: 380px)">
+    <link rel="stylesheet" href="./style485.css" media="(max-width: 485px)">
+    <link rel="stylesheet" href="./style665.css" media="(max-width: 665px)">
+    <link rel="stylesheet" href="./style743.css" media="(max-width: 743px)">
+    <link rel="stylesheet" href="./style666-900.css" media="(min-width: 666px) and (max-width: 900px)">
+    <link rel="stylesheet" href="./style901-1020.css" media="(min-width: 901px) and (max-width: 1020px)">
 
     <title>BEST-SHOP LEARNING WEBSITE</title>
   </head>
@@ -38,16 +44,15 @@
               </svg>
             </div>
           </div>
-          <div class="bucket">
+          <div class="basket">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-basket-fill" viewBox="0 0 16 16">
               <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"/>
             </svg>
-            <span class="bucket-contant">koszyk:(pusty)</span>
+            <span class="basket__contant">koszyk:(pusty)</span>
           </div>
         </div>
       </div>
-      <!-- where I stoped -->
-      <div class="main-header-manu">
+      <div class="main-manu header__main-manu">
         <div class="long-searchbar">
           <div class="long-searchbar__input-area">
             <input class="long-searchbar__input" type="text" value="szukaj">
@@ -58,8 +63,8 @@
             </div>
           </div>
         </div>
-        <ul role="list" class="main-header-manu__item">
-          <li>
+        <ul role="list" class="inline-manu">
+          <li class="inline-manu__item">
             <a class="inline-manu" href="#">
               <span class="inline-manu__title">
                 artykuły biurowe
@@ -77,7 +82,7 @@
             </a>
           </li>
           <li>
-            <a class="inline-manu" href="#">
+            <a class="inline-manu__item" href="#">
               <span class="inline-manu__title">
                 artykuły szkolne
               </span>
@@ -94,7 +99,7 @@
             </a>
           </li>
           <li>
-            <a class="inline-manu" href="#">
+            <a class="inline-manu__item" href="#">
               <span class="inline-manu__title">
                 artykuły kreatywne
               </span>
@@ -111,7 +116,7 @@
             </a>   
           </li>
           <li>
-            <a class="inline-manu" href="#">
+            <a class="inline-manu__item" href="#">
               <span class="inline-manu__title">
                 książki i kolorowanki dla dzieci
               </span>
@@ -128,7 +133,7 @@
             </a>
           </li>
           <li>
-            <a class="inline-manu" href="#">
+            <a class="inline-manu__item" href="#">
               <span class="inline-manu__title">
                 zabawki
               </span>

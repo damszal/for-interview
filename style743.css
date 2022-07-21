@@ -1,0 +1,43 @@
+@media only screen and (max-width: 743px) {
+    .logo__item {
+      font-size: 4rem;
+    }
+  
+    .slider{
+      display: none;
+    }
+  
+    .recommendation{
+      flex-direction: column;
+    }
+  
+    .component{
+      min-width: 100%
+    }
+  
+    footer{
+      flex-direction: column;
+      align-items: center;
+      justify-content: none;
+    }
+    .other-info{
+      padding-right: inherit;
+    }
+    .my-account{
+      margin-left: -1rem;
+      padding-left: inherit;
+    }
+  }
+  
+  @media only screen and (max-width: 485px) {
+    .header__login-container{
+      text-align: center;
+    }
+  
+  
+    .header-main{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
