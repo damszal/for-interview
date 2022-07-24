@@ -1,10 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Kaushan+Script&family=Ubuntu&display=swap');
+:root{
+  --ff-primary:'Ubuntu', sans-serif;
+  --ff-logo:'Kaushan Script', cursive;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-300: 0.8rem;
+  --fs-400: 0.9rem;
+  --fs-500: 1rem;
+  /* --fs-300: 0.8125rem;
+  --fs-300: 0.8125rem;
+  --fs-300: 0.8125rem; */
+
+  --clr-primary:rgb(0, 128, 0);
+  --clr-secondary: rgba(130, 3, 3, 0.684);
+
+  --cont-max-w:  min(1224px, 100vw - 1rem);
+}
+
+
 
 
 span{
   display: inline-block;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: var(--ff-primary);
 }
 
 a,a:active,a:focus,a:link{
@@ -32,20 +52,29 @@ ol li:before {
   background-color: black;
 }
 .page__header{
-  margin: 0 auto;
+  margin-inline: auto; /* works the same as => margin: 0 auto; */
 }
 .header{
-  max-width: 1224px;
+  width: var(--cont-max-w);
   padding-right: 10px;
   position: relative;
   z-index: 1000;
 }
-.header span{
-  color: green;
+.header__sign-link{
+  color: var(--clr-primary);
+  border-bottom: 0px solid silver;
+
 }
-.header span::first-letter{
+
+.header__sign-link:hover{
+  border-bottom: 3px solid silver;
+  transition: border-bottom 8s;
+}
+.header__sign-link::first-letter{
   text-transform: capitalize;
 }
+
+
 /* separate position from div */
 .inline-manu__item div {
   position: absolute;
@@ -71,7 +100,7 @@ ol li:before {
   text-transform: capitalize;
 }
 .header__sign-link {
-  color: #472b2b;
+  color: var(--clr-secondary);
   font-size: 0.8rem;
 }
 .header__sign-link:hover{
@@ -85,12 +114,12 @@ ol li:before {
 }
 .logo__item{
   text-transform:capitalize;
-  color: rgba(130, 3, 3, 0.684);
-  font-family: 'Kaushan Script', cursive;
+  color: var(--clr-secondary);
+  font-family: var(--ff-logo);
   font-size: 5rem;
 }
 .logo__item::first-letter{
-  color: green;
+  color: var(--clr-primary);
 }
 .logo__item:hover{
   cursor: pointer;
@@ -152,7 +181,7 @@ ol li:before {
 .basket__contant {
   padding-left: 1rem;
   padding-right: 8rem;
-  color: green;
+  color: var(--clr-primary);
   font-size: 0.8rem;
   text-transform: capitalize;
 }
@@ -179,7 +208,9 @@ ol li:before {
 }
 
 .main-section{
-  max-width: 1224px;
+  /* max-width: 1224px; */
+  width: var(--cont-max-w);
+
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -211,6 +242,7 @@ ol li:before {
   border-left: 2px solid black;
   margin-top: 0.5rem;
   padding-left: 0.5rem;
+  color:var(--clr-primary);
 }
 
 .side-search{
@@ -242,8 +274,9 @@ ol li:before {
   text-transform: capitalize;
   border-bottom: 1px solid silver;
   padding: 0.6rem 0 0.6rem 0;
-  margin-left: 2rem;
-  
+}
+.bestseller-list li {
+  color: var(--clr-primary);
 }
 
 ol{
@@ -255,44 +288,19 @@ ol{
 .section-right{
   width: 100%;
   margin: 0 1.5rem;
-  /* z-index: 1; */
 }
-/* +++++++++++++//////////////++++++++++++++++++ */
-/* .slider{
-  height: 220px;
-  background-color: yellowgreen;
-}
-.slider img {
-  width: 100%;
-  height: 100%;
-} */
-/* ++++++++++++++++////////////////+++++++++++++ */
+
 .new-slider{
   margin:  0 auto;
     height: 220px;
-    /* max-width: 500px; */
-
     position: relative;
     background-color: red;
 }
 
  .carousel-item > img {
-  /* position: absolute; */
-  height: 220px;
-  /* width: 100%; */
-  
+  height: 220px;  
   object-fit: cover;
 }
-/* 
-.new-slider > img:nth-child(1){
-  z-index: 1;
-}
-.new-slider > img:nth-child(2){
-  z-index: 0;
-}
-.new-slider > img:nth-child(3){
-  z-index: 0;
-} */ */
 .fav{
   border-bottom: 1px solid silver;
   margin-bottom: 1rem;
@@ -312,21 +320,15 @@ ol{
   flex-wrap: wrap;
   justify-content:space-between;
   row-gap: 1.5rem;
-
   margin-bottom: 1.5rem;
-
-  /* background-color: antiquewhite; */
 }
 
 .component {
   width: 31%;
-  /* background-color: cadetblue; */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   border: 2px solid silver;
 }
 
@@ -358,8 +360,8 @@ ol{
 /* ================================================== */
 
 footer{
-  max-width: 1224px;
-  margin: 0 auto;
+  width: var(--cont-max-w);
+  margin-inline: auto;
   font-size: 0.9rem;
   display: flex;
   flex-direction: row;
@@ -368,8 +370,6 @@ footer{
 
   border-top: 2px solid black;
   padding-top: 2rem;
-
-  /* background-color: lightcyan; */
 }
 
 footer span {
@@ -382,7 +382,6 @@ footer span {
 footer div ul{
   margin-left: 0;
   padding-left: 0;
-
 }
 
 .other-info{
