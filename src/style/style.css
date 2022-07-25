@@ -74,12 +74,12 @@ ol li:before {
 }
 .header__sign-link{
   color: var(--clr-primary);
-  border-bottom: 0px solid silver;
+  border-bottom: 0px solid var(--bs-gray-500);
 
 }
 
 .header__sign-link:hover{
-  border-bottom: 3px solid silver;
+  border-bottom: 3px solid var(--bs-gray-500);
   transition: border-bottom 8s;
 }
 .header__sign-link::first-letter{
@@ -93,8 +93,8 @@ ol li:before {
   height: fit-content;
   min-width: fit-content;
   padding: 1rem 1rem 1rem 0.5rem;
-  background-color: white;
-  border: 1px solid silver;
+  background-color: var(--bs-gray-100);
+  border: 1px solid var(--bs-gray-500);
   display: none;
 }
 .inline-manu__item:hover div{
@@ -154,9 +154,11 @@ ol li:before {
   align-items: center;
 }
 .search-bar__input {
+  width: 100%;
   border: 1px solid #d8d8d8;
   border-right: none ;
   height: inherit;
+  padding-left: 1rem;
   color: rgb(122, 122, 122);
   text-transform: capitalize;
   font-size: 0.9rem;
@@ -165,7 +167,7 @@ ol li:before {
 }
 .search-icon  {
   height: 100%;
-  width: 40px;
+  width: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,17 +177,13 @@ ol li:before {
 .search-icon:hover{
   cursor: pointer;
 }
-.search-bar{
-  padding-left: 1rem; 
-}
 
-/* continue BEM checking */
 .basket{
   border: 1px solid #d8d8d8;
   padding: 0.4rem;
   height: inherit;
   max-width: 284px;
-  width: 284px;
+  /* width: 284px; */
   display: flex;
   align-items: center;
 }
