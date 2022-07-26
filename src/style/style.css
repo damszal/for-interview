@@ -25,6 +25,16 @@
   --bs-gray-900: #212529;
   --bs-gray-1000: #000000;
 
+  --v-space-100:0.5rem;
+  --v-space-200:1rem;
+  --v-space-300:1.5rem;
+  --v-space-400:2rem;
+  --v-space-500:2.5rem;
+  --v-space-600:3rem;
+  --v-space-700:3.5rem;
+  --v-space-800:3.75rem;
+  --v-space-900:4rem;
+
   --clr-primary:rgb(0, 128, 0);
   --clr-secondary: rgba(130, 3, 3, 0.684);
 
@@ -197,7 +207,8 @@ ol li:before {
 }
 
 .header__main-manu{
-  margin-bottom: 1.5rem;
+  margin-top:var(--v-space-200) ;
+  margin-bottom: var(--v-space-300);
 }
 
 .main-manu{
@@ -206,8 +217,9 @@ ol li:before {
   padding-top: 1rem;
 }
 
-.inline-manu{
-  padding-left: 1.5rem;
+.inline-manu__title{
+  color: var(--clr-primary);
+  text-transform: capitalize;
 }
 
 .inline-manu > li {
