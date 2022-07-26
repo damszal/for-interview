@@ -30,3 +30,20 @@ window.onload = (event) => {
   })
  
 }
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const iconHumManu = document.querySelector('#icon-hum')
+const HumManu = document.querySelector('.icon-hum-manu')
+
+iconHumManu.addEventListener('click', ()=>{
+  if (HumManu.style.display === "none") {
+    HumManu.style.display = "block";
+  } else {
+    HumManu.style.display = "none";
+  }
+})
+
+
+  
+
