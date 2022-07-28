@@ -326,6 +326,7 @@ ol{
 .fav{
   border-bottom: 1px solid silver;
   margin-bottom: 1rem;
+  margin-top: 1rem;
   padding-bottom: 0.5rem;
   color: var(--bs-gray-1000);
 }
